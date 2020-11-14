@@ -22,7 +22,7 @@ const Home = () => {
                                 <div className="row">
                                     <div className="col-6">
                                         <div className="product__price">
-                    {currencyFormatter.format(product.price, { code: 'USD' })} <span>{product.discount}%</span>
+                    <span className="actualPrice">{currencyFormatter.format(product.price, { code: 'USD' })}</span> <span className="discount">{product.discount}%</span>
                                         </div>
                                     </div>
                                     <div className="col-6">
